@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robert Kellems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style>
+        body {
+            background-color: #1b1c1d;
+            color: white;
+        }
+        .aligned.menu {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .content-container {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .header-menu-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .header-menu-container > .ui.header.inverted {
+            margin-top: 0;
+        }
+        .image {
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #image-stream {
+            width: 370px;
+            height: 350px;
+        }
+        #image-aifuture {
+            width: 400px;
+            height: 330px;
+        }
+        #image-reviews {
+            width: 440px;
+            height: 200px;
+        }
+        .content {
+            display: none;
+        }
+        .show-content {
+            display: block !important;
+        }
+        p {
+            font-size: 17px;
+        }
+        h3 {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        h6 {
+            text-align: center;
+        }
+        h3:hover {
+            color: #ffcc00; /* Update to the desired color */
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.classList.toggle("show-content");
+
+            var listItem = document.querySelector(`#${id}`).closest('li');
+            listItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</head>
+<body>
+<br>
+<div class="ui container">
+    <div class="content-container">
+        <div class="header-menu-container">
+            <h1 class="ui header inverted">Robert Kellems</h1>
+            <div class="ui inverted aligned menu">
+                <a href="index.html" class="item">About</a>
+                <a href="projects.html" class="item">Projects</a>
+                <a href="resume.html" class="item">Resume</a>
+            </div>
+        </div>
+        <br>
+        <h4>Click each project to learn more.</h4>
+        <h2><u>Current Project(s):</u></h2>
+        <ul>
+            <li>
+                <h3 onclick="toggleContent('content1')"><b>Auditory Streaming Research</b></h3>
+                <div id="content1" class="content">
+                    <br>
+                    <img class="ui image" id="image-stream" src="resources/streaming.gif" alt="Animation demonstrating the UI for this project">
+                    <br>
+                    <p><a href="https://en.wikipedia.org/wiki/Auditory_scene_analysis" target="_blank">Auditory streaming</a> is a commonly used model for thinking about how our brains organize all of the sound hitting our eardrums at any given time. The main idea is that we preattentively separate sound into individual, coherent “auditory streams” using features such as pitch, temporality, and timbre. I am interested in investigating possible high-level cues that affect how we create perceived note groupings (formed via the process of auditory streaming) when listening to short melodic patterns.</p>
+                    <p>To gather data on this phenomenon, I've created a novel interface which allows subjects to listen to short melodic loops and map their perceived note groupings onto a grid sequencer by drawing lines. Once one completes the experiment, I can gather their drawn connections and recreate them on my own machine to label them based on key aspects. With these data, I have been reaching conclusions about high-level principles which play a part in our auditory perception.</p>
+                    <p><a href="https://pcl.sitehost.iu.edu/robsexperiments/tests&examples/auditoryStreaming/experiment/" target="_blank">Try the experiment for yourself here!</a> (click "Continue" at the bottom of the first page to view the experiment)</p>
+                    <p><b>Awards:</b></p>
+                    <ul>
+                        <li><p><a href="https://cogs.indiana.edu/student-portal/undergraduate/murray-austin-goldstone-scholarship.html">Murray Austin Goldstone Scholarship for Undergraduate Research</a></p></li>
+                        <li><p><a href="https://cogsci.northwestern.edu/undergraduate/undergraduate-award.html" target="_blank">Robert J. Glushko Research Excellence Award for Outstanding Oral Presentation</a></p></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        
+
+        <h2><u>Completed Projects:</u></h2>
+        <h2>2023:</h2>
+        <ul>
+            <li>
+                <h3 onclick="toggleContent('content2')"><b>AI Futures Artificial Intelligence Ground Vehicle Challenge @ Purdue (1st Place)</b></h3>
+                <div id="content2" class="content">
+                    <br>
+                    <img class="ui image" id="image-aifuture" src="resources/aiFutures.jpg" alt="Picture from the AI Futures competition">
+                    <h6><i><a href="https://www.linkedin.com/posts/aifutures_purdueuniversity-autonomousvehicles-artificialintelligence-activity-7025530933269209089-NPUf/?utm_source=share&utm_medium=member_desktop" target="_blank">Image source</a></i></h5>
+                    <p>I participated in a capture the flag style competition with a team of fellow undergraduates in which we remotely connected to a robot using Linux and ROS Noetic, and then implemented algorithms that allowed the robot to operate autonomously. We utilized Python and OpenCV along with the robot's built-in camera to accomplish basic computer vision tasks, such as real-time classification of left versus right arrows. At the end of the challenge, we had the top score in the undergraduate category.</p>
+                </div>
+            </li>
+        </ul>
+        <h2>2022:</h2>
+        <ul>
+            <li>
+                <h3 onclick="toggleContent('content3')"><b>Movie Review Classification w/ Logistic Regression</b></h3>
+                <div id="content3" class="content">
+                    <img class="ui image" id="image-reviews" src="resources/reviews.png" alt="Examples of data from this project">
+                    <br>
+                    <p>Using Python's “os” library, I iterated through 50000 movie reviews, each labeled as either positive or negative, and created CSV files containing each review along with its label. After cleaning the text for each review, I utilized Scikit-learn to transform each review into a feature vector which was then fed into a logistic regression model. The average test accuracy of this model was around 89%.</p>
+                    <p><a href="resources/LogisticRegressionMovieReviews.pdf" target="_blank">Code</a></p>
+                </div>
+            </li>
+        </ul>
+        <h2>2021:</h2>
+    </div>
+</div>
+</body>
+</html>
