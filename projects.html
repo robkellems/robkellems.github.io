@@ -65,6 +65,20 @@
         .show-content {
             display: block !important;
         }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        .tag {
+            background: #ffcc00; /* Update to the desired color */
+            color: #1b1c1d;
+            border-radius: 8px;
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 10px;
+            text-align: center;
+        }
         p {
             font-size: 17px;
         }
@@ -107,6 +121,11 @@
         <ul>
             <li>
                 <h3 onclick="toggleContent('content1')"><b>Auditory Streaming Research</b></h3>
+                <div class="tag-container">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Research</span>
+                </div>
                 <div id="content1" class="content">
                     <br>
                     <img class="ui image" id="image-stream" src="resources/streaming.gif" alt="Animation demonstrating the UI for this project">
@@ -129,6 +148,11 @@
         <ul>
             <li>
                 <h3 onclick="toggleContent('content2')"><b>AI Futures Artificial Intelligence Ground Vehicle Challenge @ Purdue (1st Place)</b></h3>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">Linux</span>
+                </div>
                 <div id="content2" class="content">
                     <br>
                     <img class="ui image" id="image-aifuture" src="resources/aiFutures.jpg" alt="Picture from the AI Futures competition">
@@ -141,6 +165,12 @@
         <ul>
             <li>
                 <h3 onclick="toggleContent('content3')"><b>Movie Review Classification w/ Logistic Regression</b></h3>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NLP</span>
+                </div>
                 <div id="content3" class="content">
                     <img class="ui image" id="image-reviews" src="resources/reviews.png" alt="Examples of data from this project">
                     <br>
@@ -151,6 +181,12 @@
             </li>
             <li>
                 <h3 onclick="toggleContent('content4')"><b>Reminder App</b></h3>
+                <div class="tag-container">
+                    <span class="tag">Java</span>
+                    <span class="tag">Android Studio</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">SQL</span>
+                </div>
                 <div id="content4" class="content">
                     <img class="ui image" id="image-reminder" src="resources/reminder.gif" alt="Short clip of how the app functions">
                     <br>
@@ -163,6 +199,10 @@
         <ul>
             <li>
                 <h3 onclick="toggleContent('content5')"><b>JPMorgan Chase Data for Good Hackathon</b></h3>
+                <div class="tag-container">
+                    <span class="tag">R</span>
+                    <span class="tag">AWS</span>
+                </div>
                 <div id="content5" class="content">
                     <img class="ui image" id="image-hackathon" src="resources/hackathon.png" alt="Figure from the presentation">
                     <br>
@@ -174,6 +214,11 @@
             </li>
             <li>
                 <h3 onclick="toggleContent('content6')"><b>Environmental Sound Classification w/ Neural Networks</b></h3>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">TensorFlow/Keras</span>
+                    <span class="tag">Matplotlib</span>
+                </div>
                 <div id="content6" class="content">
                     <img class="ui image" id="image-spectro" src="resources/spectro.png" alt="Spectrogram">
                     <br>
@@ -185,6 +230,11 @@
             </li>
             <li>
                 <h3 onclick="toggleContent('content7')"><b>Predicting eBay Auction Prices w/ Regression</b></h3>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">ggplot2</span>
+                </div>
                 <div id="content7" class="content">
                     <img class="ui image" id="image-pca" src="resources/pca.png" alt="PCA from the paper for this project">
                     <br>
@@ -196,6 +246,10 @@
             </li>
             <li>
                 <h3 onclick="toggleContent('content8')"><b>Auditory Scene Analysis & Musical Experience</b></h3>
+                <div class="tag-container">
+                    <span class="tag">R</span>
+                    <span class="tag">Research</span>
+                </div>
                 <div id="content8" class="content">
                     <img class="ui image" id="image-asa" src="resources/asa.jpg" alt="Image illustrating auditory scene analysis">
                     <h6><i><a href="https://www.slideserve.com/moeshe/auditory-scene" target="_blank">Image source</a></i></h5>
@@ -215,6 +269,10 @@
         <ul>
             <li>
                 <h3 onclick="toggleContent('content9')"><b>Melody Generation w/ Genetic Algorithms</b></h3>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">Matplotlib</span>
+                </div>
                 <div id="content9" class="content">
                     <img class="ui image" id="image-mel" src="resources/mel.png" alt="Musical notation">
                     <br>
