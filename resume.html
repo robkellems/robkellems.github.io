@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robert Kellems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style>
+        body {
+            background-color: #1b1c1d;
+            color: white;
+        }
+        .aligned.menu {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .profile-image {
+            width: 225px;
+            height: 225px;
+            border: 3px solid white;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content-container {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .header-menu-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .header-menu-container > .ui.header.inverted {
+            margin-top: 0;
+        }
+        p {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+<br>
+<div class="ui container">
+    <div class="content-container">
+        <div class="header-menu-container">
+            <h1 class="ui header inverted">Robert Kellems</h1>
+            <div class="ui inverted aligned menu">
+                <a href="index.html" class="item">About</a>
+                <a href="projects.html" class="item">Projects</a>
+                <a href="resume.html" class="item">Resume</a>
+            </div>
+        </div>
+<br>
+<p>The most recent version of my resume can be found <a href="resources/RobertKellemsResume.pdf">here</a>.</p>
+<object data="resources/RobertKellemsResume.pdf" type="application/pdf" width="100%" height="800px"> </object>
