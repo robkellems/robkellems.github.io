@@ -43,6 +43,22 @@
             width: 440px;
             height: 200px;
         }
+        #image-hackathon {
+            width:425px;
+            height:350px;
+        }
+        #image-spectro {
+            width: 450px;
+            height: 350px;
+        }
+        #image-pca {
+            width: 400px;
+            height: 400px;
+        }
+        #image-asa {
+            width: 425px;
+            height: 350px;
+        }
         .content {
             display: none;
         }
@@ -130,10 +146,84 @@
                     <br>
                     <p>Using Python's “os” library, I iterated through 50000 movie reviews, each labeled as either positive or negative, and created CSV files containing each review along with its label. After cleaning the text for each review, I utilized Scikit-learn to transform each review into a feature vector which was then fed into a logistic regression model. The average test accuracy of this model was around 89%.</p>
                     <p><a href="resources/LogisticRegressionMovieReviews.pdf" target="_blank">Code</a></p>
+                    <br>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleContent('content4')"><b>Reminder App</b></h3>
+                <div id="content4" class="content">
+                    <img class="ui image" id="image-reminder" src="resources/reminder.gif" alt="Short clip of how the app functions">
+                    <br>
+                    <p>I built an Android application which allows the user to write a note and choose a date/time to be reminded with said note. Each reminder is stored in a Firebase database rather than locally.</p>
+                    <p><a href="https://github.com/robkellems/ReminderApp" target="_blank">Github</a></p>
                 </div>
             </li>
         </ul>
         <h2>2021:</h2>
+        <ul>
+            <li>
+                <h3 onclick="toggleContent('content5')"><b>JPMorgan Chase Data for Good Hackathon</b></h3>
+                <div id="content5" class="content">
+                    <img class="ui image" id="image-hackathon" src="resources/hackathon.png" alt="Figure from the presentation">
+                    <br>
+                    <p>I collaborated with a remote team of undergraduates from different regions across the United States. Our objective was to devise an investment strategy for a New York school board, using a combination of data collected from local schools and online sources. After completing our analysis, we effectively presented our recommendations to the school board members, demonstrating our thorough understanding of the data and our capacity to transform it into actionable insights.</p>
+                    <p><a href="resources/JPMCHackathonGroup8.pdf" target="_blank">Presentation Slides</a></p>
+                    <p><a href="https://careers.jpmorgan.com/US/en/students/programs/code-for-good?search=&tags=location__Americas__UnitedStatesofAmerica" target="_blank">JPMorgan Chase Social Good Hackathons</a></p>
+                    <br>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleContent('content6')"><b>Environmental Sound Classification w/ Neural Networks</b></h3>
+                <div id="content6" class="content">
+                    <img class="ui image" id="image-spectro" src="resources/spectro.png" alt="Spectrogram">
+                    <br>
+                    <p>I collaborated with a team of fellow students to implement several deep neural network designs in order to classify environmental sound clips using Python and TensorFlow/Keras. We used <a href="https://www.kaggle.com/datasets/chrisfilo/urbansound8k" target="_blank">UrbanSound8K</a>, a dataset containing 8732 labeled sound excerpts, each belonging to one of ten classes (e.g. dog bark, ambulance siren).</p>
+                    <p><a href="resources/B351FinalProject.py" target="_blank">Code</a></p>
+                    <p><a href="resources/AIFinalResearchPaper.pdf" target="_blank">Paper</a></p>
+                    <br>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleContent('content7')"><b>Predicting eBay Auction Prices w/ Regression</b></h3>
+                <div id="content7" class="content">
+                    <img class="ui image" id="image-pca" src="resources/pca.png" alt="PCA from the paper for this project">
+                    <br>
+                    <p>I worked with a team of fellow undergraduates in order to find potential variables which could assist in predicting the final selling price of smartphones being sold on eBay. Using Python and Beautiful Soup, we scraped data from several auctions and then used R to apply various statistical models to these data.</p>
+                    <p><a href="https://github.com/James-Dumas/B365-final-project" target="_blank">Github</a></p>
+                    <p><a href="resources/B365FinalReport.pdf" target="_blank">Paper</a></p>
+                    <br>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleContent('content8')"><b>Auditory Scene Analysis & Musical Experience</b></h3>
+                <div id="content8" class="content">
+                    <img class="ui image" id="image-asa" src="resources/asa.jpg" alt="Image illustrating auditory scene analysis">
+                    <h6><i><a href="https://www.slideserve.com/moeshe/auditory-scene" target="_blank">Image source</a></i></h5>
+                    <p>I designed an experiment which aimed to answer two questions:</p>
+                    <ul>
+                        <li><p>Are people with more musical experience more adept at auditory scene analysis (ASA) in the case of recorded music than those with less experience?</p></li>
+                        <li><p>Does the presence of vocals have a greater effect on performance in this task for those with less musical experience?</p></li>
+                    </ul>
+                    <br>
+                    <p>I had 20 subjects participate in the experiment and used R to conduct data analysis with the results. I found that musical experience is positively correlated with performance on ASA tasks, and the presence of vocals leads to worsened performance across levels of experience.</p>
+                    <p><a href="https://github.com/robkellems/Auditory-Scene-Analysis-And-Musical-Experience" target="_blank">Github</a></p>
+                    <p><a href="resources/Q370FinalPaper.pdf" target="_blank">Paper</a></p>
+                </div>
+            </li>
+        </ul>
+        <h2>2020:</h2>
+        <ul>
+            <li>
+                <h3 onclick="toggleContent('content9')"><b>Bed and Breakfast Database</b></h3>
+                <div id="content9" class="content">
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleContent('content10')"><b>Melody Generation w/ Genetic Algorithms</b></h3>
+                <div id="content10" class="content">
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 </body>
