@@ -59,6 +59,10 @@
             width: 425px;
             height: 350px;
         }
+        #image-robotarm {
+            width: 337px;
+            height: 484px;
+        }
         .content {
             display: none;
         }
@@ -124,6 +128,7 @@
                 <div class="tag-container">
                     <span class="tag">JavaScript</span>
                     <span class="tag">HTML/CSS</span>
+                    <span class="tag">R</span>
                     <span class="tag">Research</span>
                 </div>
                 <div id="content1" class="content">
@@ -194,6 +199,18 @@
                     <br>
                     <p>I built an Android application which allows the user to write a note and choose a date/time to be reminded with said note. Each reminder is stored in a Firebase database rather than locally.</p>
                     <p><a href="https://github.com/robkellems/ReminderApp" target="_blank">Github</a></p>
+                </div>
+            </li>
+            <li>
+                <h3 onclick="toggleContent('content10')"><b>Autonomous Pick-and-Place Robotic Arm</b></h3>
+                <div class="tag-container">
+                    <span class="tag">C</span>
+                </div>
+                <div id="content10" class="content">
+                    <img class="ui image" id="image-robotarm" src="resources/RobotArm.jpg" alt="The robotic arm viewed from above">
+                    <br>
+                    <p>I collaborated with a group of classmates to build a robotic arm and develop software in C that utilized inverse kinematics and incorporated safety measures to efficiently pick up and relocate objects within a specified range.</p>
+                    <p><a href="resources/B355FinalReport.pdf" target="_blank">Paper</a></p>
                 </div>
             </li>
         </ul>
